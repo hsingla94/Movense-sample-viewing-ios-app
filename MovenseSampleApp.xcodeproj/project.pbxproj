@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0AED2C2068E736002976BC /* MovenseCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0AED2B2068E735002976BC /* MovenseCamera.framework */; };
+		EC0AED2D2068E76E002976BC /* MovenseCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0AED2B2068E735002976BC /* MovenseCamera.framework */; };
+		EC0AED2E2068E76E002976BC /* MovenseCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC0AED2B2068E735002976BC /* MovenseCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC4C6F0F204D8636000D441F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C6F0E204D8636000D441F /* AppDelegate.swift */; };
 		EC4C6F11204D8636000D441F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C6F10204D8636000D441F /* ViewController.swift */; };
 		EC4C6F14204D8636000D441F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4C6F12204D8636000D441F /* Main.storyboard */; };
 		EC4C6F16204D8636000D441F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4C6F15204D8636000D441F /* Assets.xcassets */; };
 		EC4C6F19204D8636000D441F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4C6F17204D8636000D441F /* LaunchScreen.storyboard */; };
 		EC4C9E8A204EC4D400886259 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C9E89204EC4D400886259 /* FirstViewController.swift */; };
-		ECDABADA204ED496004E6B86 /* MovenseCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDABAD9204ED496004E6B86 /* MovenseCamera.framework */; };
-		ECDABADB204ED4B1004E6B86 /* MovenseCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECDABAD9204ED496004E6B86 /* MovenseCamera.framework */; };
-		ECDABADC204ED4B1004E6B86 /* MovenseCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECDABAD9204ED496004E6B86 /* MovenseCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EC4C6F25204D8706000D441F /* Embed Frameworks */ = {
+		EC0AED2F2068E76E002976BC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ECDABADC204ED4B1004E6B86 /* MovenseCamera.framework in Embed Frameworks */,
+				EC0AED2E2068E76E002976BC /* MovenseCamera.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EC0AED2B2068E735002976BC /* MovenseCamera.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MovenseCamera.framework; sourceTree = "<group>"; };
 		EC4C6F0B204D8636000D441F /* MovenseSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovenseSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4C6F0E204D8636000D441F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC4C6F10204D8636000D441F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		EC4C6F18204D8636000D441F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC4C6F1A204D8636000D441F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC4C9E89204EC4D400886259 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		ECDABAD9204ED496004E6B86 /* MovenseCamera.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MovenseCamera.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,14 +49,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECDABADA204ED496004E6B86 /* MovenseCamera.framework in Frameworks */,
-				ECDABADB204ED4B1004E6B86 /* MovenseCamera.framework in Frameworks */,
+				EC0AED2C2068E736002976BC /* MovenseCamera.framework in Frameworks */,
+				EC0AED2D2068E76E002976BC /* MovenseCamera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC0AED2A2068E70A002976BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC0AED2B2068E735002976BC /* MovenseCamera.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC4C6F02204D8636000D441F = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +84,7 @@
 		EC4C6F0D204D8636000D441F /* MovenseSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				ECDABAD9204ED496004E6B86 /* MovenseCamera.framework */,
+				EC0AED2A2068E70A002976BC /* Frameworks */,
 				EC4C6F0E204D8636000D441F /* AppDelegate.swift */,
 				EC4C6F10204D8636000D441F /* ViewController.swift */,
 				EC4C9E89204EC4D400886259 /* FirstViewController.swift */,
@@ -98,7 +106,7 @@
 				EC4C6F07204D8636000D441F /* Sources */,
 				EC4C6F08204D8636000D441F /* Frameworks */,
 				EC4C6F09204D8636000D441F /* Resources */,
-				EC4C6F25204D8706000D441F /* Embed Frameworks */,
+				EC0AED2F2068E76E002976BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,11 +313,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MovenseSampleApp",
+					"$(PROJECT_DIR)/MovenseSampleApp/Frameworks",
 				);
 				INFOPLIST_FILE = MovenseSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULEMAP_FILE = "";
+				MODULEMAP_PRIVATE_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.movense.sample.MovenseSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -324,11 +336,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MovenseSampleApp",
+					"$(PROJECT_DIR)/MovenseSampleApp/Frameworks",
 				);
 				INFOPLIST_FILE = MovenseSampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MODULEMAP_FILE = "";
+				MODULEMAP_PRIVATE_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.movense.sample.MovenseSampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
