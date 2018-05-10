@@ -9,7 +9,8 @@
 import UIKit
 import MovenseCamera
 import CoreMotion
-var documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+//var documentsDirectory = FileManager.default.urls(for: .downloadsDirectory, in: .allDomainsMask).first!
+
 class ViewController: UIViewController,DownloadProgrssDelegate,MovesCountDelegate {
     var movesCount: Int = 0 {
         didSet{
@@ -38,12 +39,13 @@ class ViewController: UIViewController,DownloadProgrssDelegate,MovesCountDelegat
     @IBOutlet weak var progressLabel: UILabel!
     let motionManger = CMMotionManager()
     var url = "https://www.movense.com/publisher/moves/5_509.move"
+    var filePath = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.moveImageView?.downladProgressDelegate = self
-        self.moveImageView.movesCountDelegate = self
-        self.moveImageView.moveDownload(downloadURL: URL(string: url)!, moveName: "", filePath: documentsDirectory.absoluteString)
+        self.moveImageView.movesCountDelegate = self        
+        self.moveImageView.moveDownload(downloadURL: URL(string: url)!)
         
     }
 
